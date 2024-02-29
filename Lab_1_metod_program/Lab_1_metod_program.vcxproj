@@ -141,9 +141,15 @@
   <ItemGroup>
     <ClCompile Include="interface.cpp" />
     <ClCompile Include="Lab_1_metod_program.cpp" />
+    <ClCompile Include="MenuOneDemention.cpp" />
+    <ClCompile Include="MenuThreeDemention.cpp" />
+    <ClCompile Include="MenuTwoDemention.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interface.h" />
+    <ClInclude Include="MenuOneDemention.h" />
+    <ClInclude Include="MenuThreeDemention.h" />
+    <ClInclude Include="MenuTwoDemention.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
