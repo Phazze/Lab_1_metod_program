@@ -9,57 +9,57 @@ void Interface()
 	
 	while (result)
 	{
-		cout << "Введите число, число соответсвует номеру задания : \n";
+		cout << "Enter the number that corresponds to the job number: \n";
 		cout << 1 << endl;
 		cout << 2 << endl;
 		cout << 3 << endl;
-		cout << "Чтобы завершить программу нажмите " << 0 << endl;
+		cout << "To end the program, press " << 0 << endl;
 
 		cin >> choise;
 
 		if (choise == '0')
 		{
-			cout << "Вы уверены, что хотите завершить программу? (Y/N)" << endl;
+			cout << "Are you sure you want to complete the program? (Y/N)" << endl;
 
 			cin >> confirmation;
 
 			if (confirmation == 'Y' || confirmation == 'y')
 			{
-				cout << "До свидания!\n";
+				cout << "Goodbye!\n";
 				result = false;
 				break;
 			}
 			if (confirmation == 'N' || confirmation == 'n')
 			{
 				result = true;
-				cout << "Возвращаю Вас в главное меню." << endl;
+				cout << "I return you to the main menu." << endl;
 			}
 			else 
 			{
 				result = true;
-				cout << "Не понял вашу команду возвращаю Вас в главное меню!" << endl;
+				cout << "I didnвЂ™t understand you, IвЂ™m returning you to the main menu!" << endl;
 			}
 		}
 
 		switch (choise)
 		{
 		case '1':
-			cout << "Выполняется задание 1 \n";
+			cout << "Opening the task menu #1 \n";
 			MenuOneDemention();
 			result = false;
 			break;
 		case '2':
-			cout << "Выполняется задание 2 \n";
+			cout << "Opening the task menu #2 \n";
 			MenuTwoDemention();
 			result = false;
 			break;
 		case '3':
-			cout << "Выполняется задание 3 \n";
+			cout << "Opening the task menu #3 \n";
 			MenuThreeDemention();
 			result = false;
 			break;
 		default:
-			cout << "Введенное значение не соответствует номеру задания, введите значение еще 1 раз\n";
+			cout << "I didnвЂ™t understand you, IвЂ™m returning you to the main menu\n";
 			break;
 		}
 	}
